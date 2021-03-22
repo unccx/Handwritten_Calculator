@@ -76,4 +76,5 @@ btn_save.grid(row=2, column=0, pady=1, padx=1)
 button_clear = Button(text="清空", command=clear_widget)
 button_clear.grid(row=2, column=1, pady=1, padx=1)
 
-root.mainloop()
+if __name__ == '__main__':
+    root.mainloop()
