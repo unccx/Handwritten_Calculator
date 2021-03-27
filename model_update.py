@@ -1,6 +1,3 @@
-#~~~5. 模型更新 ~~~
-
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++
 def model_update(X, y, model):
     
     from tensorflow.keras.optimizers import RMSprop
@@ -24,7 +21,7 @@ def model_update(X, y, model):
 
     datagen.fit(X)
 
-    #freezing layers 0 to 4
+    #0-4层不训练
     for l in range(0, 5):
         model.layers[l].trainable = False
 
@@ -41,7 +38,6 @@ def model_update(X, y, model):
     model.save("updated_model.h5") 
     
     print("模型已更新!!")
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 # 接受用户对预测的反馈

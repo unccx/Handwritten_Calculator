@@ -1,4 +1,3 @@
-
 #~~~3. 预测 ~~~
 import numpy as np
 from PIL import Image
